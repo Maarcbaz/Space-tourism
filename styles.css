@@ -229,6 +229,7 @@ main {
     }
 
     main {
+        position: relative;
         margin-top: 1rem;
         width: min(100% - 5vw);
 
@@ -265,6 +266,15 @@ main {
         visibility: hidden;
     }
 
+    .all {
+        background-color: transparent;
+        z-index: -100px;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+
     .overlay {
         top: 0;
         right: 0;
@@ -274,18 +284,13 @@ main {
         display: flex;
         position: fixed;
         height: 100vh;
+        z-index: 100;
         width: 0;
         overflow: hidden;
         transition: all ease-out .3s;
     }
 
-    .all {
-        background-color: transparent;
-        z-index: -100px;
-        height: 100vh;
-        width: 100%;
-        position: absolute;
-    }
+
 
     .overlay_content ul {
         overflow: hidden;

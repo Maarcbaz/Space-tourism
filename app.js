@@ -16,7 +16,7 @@ open.addEventListener('click', () => {
         overlayNav.style.width = '230px'
     }    
 })
-all_nav.addEventListener('mouseover', () => {
+all_nav.addEventListener('click', () => {
     if (overlayNav.style.width == '230px') {
         overlayNav.style.width = '0'
     }
