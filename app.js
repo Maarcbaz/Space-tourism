@@ -8,10 +8,16 @@ navlinks.forEach(link => {
 })
 let overlayNav = document.querySelector('.overlay') 
 let open = document.querySelector('.open')
+let all_nav = document.querySelector('.all')
 open.addEventListener('click', () => {
-    if(overlayNav.style.display == 'block') {
-        overlayNav.style.display = 'none'
+    if(overlayNav.style.width == '230px') {
+        overlayNav.style.width = '0'
     } else {
-        overlayNav.style.display = 'block'
+        overlayNav.style.width = '230px'
     }    
+})
+all_nav.addEventListener('mouseover', () => {
+    if (overlayNav.style.width == '230px') {
+        overlayNav.style.width = '0'
+    }
 })
