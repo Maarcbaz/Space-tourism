@@ -87,8 +87,7 @@ a {
 }
 
 .topnav ul {
-    background: hsl(var(--LIGHT-WHITE)/.05);
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(4rem);
     display: flex;
     padding: 30px 100px;
     gap: 1rem;
@@ -311,8 +310,7 @@ main {
             top: 0;
             right: 0;
             overflow: hidden;
-            background-color: hsl(var(--LIGHT-WHITE)/0.4);
-            backdrop-filter: blur(30px);
+            backdrop-filter: blur(7rem);
             display: flex;
             position: fixed;
             height: 100vh;
