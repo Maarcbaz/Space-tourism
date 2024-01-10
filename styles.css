@@ -14,6 +14,7 @@ body {
     font-family: var(--ff-sans-normal);
     line-height: 1.5;
     overflow-x: hidden;
+    background-color: rgb(9, 9, 32);
 }
 
 /* VARIABLE  */
