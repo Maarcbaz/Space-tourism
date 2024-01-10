@@ -274,160 +274,163 @@ main {
     .home_main_content h4 {
         font-size: 100%;
     }
+}
 
-    @media screen and (max-width: 630px) {
-        .main_container {
-            background-image: url(./assets/home/background-home-mobile.jpg);
-            height: 145vw;
-        }
-
-        .tech_container {
-            background-image: url(./assets/technology/background-technology-mobile.jpg);
-        }
-
-        .crew_container {
-            background-image: url(./assets/crew/background-crew-mobile.jpg);
-        }
-
-        .dest_container {
-            background-image: url(./assets/destination/background-destination-mobile.jpg);
-        }
-
-        .topnav_links {
-            display: none;
-            visibility: hidden;
-        }
-
-        .all {
-            background-color: transparent;
-            height: 100vh;
-            width: 100%;
-            z-index: 1;
-            position: absolute;
-        }
-
-        .overlay {
-            top: 0;
-            right: 0;
-            overflow: hidden;
-            backdrop-filter: blur(7rem);
-            display: flex;
-            position: fixed;
-            height: 100vh;
-            z-index: 100;
-            width: 0;
-            overflow: hidden;
-            transition: all ease-out .3s;
-        }
-
-        .overlay_content {
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            top: 6rem;
-            left: 20px;
-            position: relative;
-        }
-
-        .overlay_content {
-            position: relative;
-        }
-
-        .overlay_content {
-            list-style: none;
-            padding-block: 10px;
-            display: block;
-        }
-
-        .overlay_content a {
-            display: block;
-            text-transform: uppercase;
-            font-style: normal;
-            font-weight: var(--FW-400);
-            font-size: 80%;
-            text-decoration: none;
-            color: var(--LIGHT-WHITE)
-        }
-
-        .overlay_content {
-            line-height: 40px;
-            display: block;
-            margin-top: 4rem;
-            padding-left: 20px;
-            position: absolute;
-            gap: 1rem;
-        }
-        .overlay_content a  {
-            display: flex;
-            gap: 1rem;
-            flex-direction: row;
-        }
-        .overlay_content a:hover {
-            color: var(--WHITE);
-        }
-
-        .logo {
-            margin-top: -5px;
-        }
-
-        .open {
-            z-index: 100;
-            display: block;
-            position: absolute;
-            right: 20px;
-            top: 27px;
-        }
-
-        /* HOME MAIN STYLING  */
+@media screen and (max-width: 630px) {
+    .main_container {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        height: 145vw;
     }
 
-    @media screen and (max-width: 560px) {
-        .home_main_content {
-            gap: 1rem;
-        }
-
-        .home_main_content h1 {
-            font-size: 5rem;
-        }
-
-        .home_main_content h4 {
-            font-size: 95%;
-        }
-
-        .home_main_content p {
-            font-size: 1rem;
-        }
-
-        main {
-            width: min(100% - 9vw);
-            margin-inline: auto;
-        }
+    .tech_container {
+        background-image: url(./assets/technology/background-technology-mobile.jpg);
     }
 
-    @media screen and (max-width: 480px) {
-        .main_container {
-            background-image: url(./assets/home/background-home-mobile.jpg);
-            height: 175vw;
-        }
+    .crew_container {
+        background-image: url(./assets/crew/background-crew-mobile.jpg);
     }
 
-    @media screen and (max-width: 375px) {
-        .main_container {
-            background-image: url(./assets/home/background-home-mobile.jpg);
-            height: 225vw;
-        }
+    .dest_container {
+        background-image: url(./assets/destination/background-destination-mobile.jpg);
     }
 
-    @media screen and (max-width: 360px) {
-        .main_container {
-            background-image: url(./assets/home/background-home-mobile.jpg);
-            height: 225vw;
-        }
+    .topnav_links {
+        display: none;
+        visibility: hidden;
     }
 
-    @media screen and (max-width: 320px) {
-        .main_container {
-            background-image: url(./assets/home/background-home-mobile.jpg);
-            height: 245vw;
-        }
+    .all {
+        background-color: transparent;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
     }
+
+    .overlay {
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        backdrop-filter: blur(7rem);
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        z-index: 100;
+        width: 0;
+        overflow: hidden;
+        transition: all ease-out .3s;
+    }
+
+    .overlay_content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        top: 6rem;
+        left: 20px;
+        position: relative;
+    }
+
+    .overlay_content {
+        position: relative;
+    }
+
+    .overlay_content {
+        list-style: none;
+        padding-block: 10px;
+        display: block;
+    }
+
+    .overlay_content a {
+        display: block;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: var(--FW-400);
+        font-size: 80%;
+        text-decoration: none;
+        color: var(--LIGHT-WHITE)
+    }
+
+    .overlay_content {
+        line-height: 40px;
+        display: block;
+        margin-top: 4rem;
+        padding-left: 20px;
+        position: absolute;
+        gap: 1rem;
+    }
+
+    .overlay_content a {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .overlay_content a:hover {
+        color: var(--WHITE);
+    }
+
+    .logo {
+        margin-top: -5px;
+    }
+
+    .open {
+        z-index: 100;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 27px;
+    }
+
+    /* HOME MAIN STYLING  */
+}
+
+@media screen and (max-width: 560px) {
+    .home_main_content {
+        gap: 1rem;
+    }
+
+    .home_main_content h1 {
+        font-size: 5rem;
+    }
+
+    .home_main_content h4 {
+        font-size: 95%;
+    }
+
+    .home_main_content p {
+        font-size: 1rem;
+    }
+
+    main {
+        width: min(100% - 9vw);
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_container {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        height: 175vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main_container {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        height: 225vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main_container {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        height: 225vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main_container {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+        height: 245vw;
+    }
+}
