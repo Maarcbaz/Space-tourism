@@ -41,7 +41,7 @@ body {
     background-image: url(./assets/technology/background-technology-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 100vh;
     background-position: 50%;
 }
 
@@ -49,7 +49,7 @@ body {
     background-image: url(./assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 100vh;
     background-position: 50%;
 }
 
@@ -57,7 +57,7 @@ body {
     background-image: url(./assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 100vh;
     background-position: 50%;
 }
 
@@ -67,7 +67,7 @@ body {
     background-image: url(./assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    height: 100vh;
     background-position: 50%;
 }
 
@@ -145,25 +145,38 @@ main {
 .home {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
 }
 
 .home_main_content {
-    width: 270px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
 }
 
 .home_main_content h4 {
+    font-weight: var(--FW-400);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
     color: var(--LIGHT-WHITE);
     font-weight: var(--FW-400);
     font-family: var(--ff-sans-cond);
+
 }
 
 .home_main_content h1 {
     font-family: var(--ff-serif);
     color: var(--WHITE);
+    font-size: 8rem;
+    font-weight: var(--FW-400);
 }
 
 .home_main_content p {
-    color: var(--LIGHT-WHITE)
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: var(--FW-500);
+    color: var(--LIGHT-WHITE);
 }
 
 .home_main_btn button {
@@ -182,21 +195,10 @@ main {
     border-radius: 50%;
 }
 
-.home_main_btn button::after {
-    content: "";
-    height: 100%;
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    background: hsl(var(--clr-white)/.1);
-    border-radius: 50%;
-    transition: opacity 0.5s linear 0s, transform 0.75s ease-in-out 0s;
-}
-
 @media screen and (max-width: 960px) {
     .main_container {
         background-image: url(./assets/home/background-home-tablet.jpg);
+        height: 110vw;
     }
 
     .tech_container {
@@ -219,6 +221,12 @@ main {
         background: hsl(var(--LIGHT-WHITE)/.9) !important;
         backdrop-filter: blur(30px);
     }
+
+    /* MAIN STYLING  */
+    .home_main_content h1 {
+        font-size: 6rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -231,131 +239,187 @@ main {
     main {
         position: relative;
         margin-top: 1rem;
-        width: min(100% - 5vw);
 
     }
 
     .home {
+        margin-top: 4rem;
+        gap: 4rem;
         flex-direction: column;
+
     }
 
     .home_main_content {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 630px) {
-    .main_container {
-        background-image: url(./assets/home/background-home-mobile.jpg);
+    .home_main_content {
+        text-align: center;
     }
 
-    .tech_container {
-        background-image: url(./assets/technology/background-technology-mobile.jpg);
+    .home_main_content h1 {
+        font-size: 5rem;
     }
 
-    .crew_container {
-        background-image: url(./assets/crew/background-crew-mobile.jpg);
+    .home_main_content h4 {
+        font-size: 100%;
     }
 
-    .dest_container {
-        background-image: url(./assets/destination/background-destination-mobile.jpg);
+    @media screen and (max-width: 630px) {
+        .main_container {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            height: 145vw;
+        }
+
+        .tech_container {
+            background-image: url(./assets/technology/background-technology-mobile.jpg);
+        }
+
+        .crew_container {
+            background-image: url(./assets/crew/background-crew-mobile.jpg);
+        }
+
+        .dest_container {
+            background-image: url(./assets/destination/background-destination-mobile.jpg);
+        }
+
+        .topnav_links {
+            display: none;
+            visibility: hidden;
+        }
+
+        .all {
+            background-color: transparent;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .overlay {
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: hsl(var(--LIGHT-WHITE)/0.4);
+            backdrop-filter: blur(30px);
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            z-index: 100;
+            width: 0;
+            overflow: hidden;
+            transition: all ease-out .3s;
+        }
+
+
+
+        .overlay_content ul {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            top: 6rem;
+            left: 20px;
+            position: relative;
+        }
+
+        .overlay_content {
+            position: relative;
+        }
+
+        .overlay_content li {
+            list-style: none;
+            padding-block: 10px;
+            display: block;
+        }
+
+        .overlay_content a {
+            display: block;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: var(--FW-400);
+            font-size: 80%;
+            text-decoration: none;
+            color: var(--LIGHT-WHITE)
+        }
+
+
+        .overlay_content a {
+            display: flex;
+            gap: 5px;
+        }
+
+        .overlay_content ul {
+            display: flex;
+            padding: 40% 0;
+            gap: 1rem;
+        }
+
+        .overlay_content a:hover {
+            color: var(--WHITE);
+        }
+
+        .logo {
+            margin-top: -14px;
+        }
+
+        .open {
+            z-index: 100;
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        /* HOME MAIN STYLING  */
     }
 
-    .topnav_links {
-        display: none;
-        visibility: hidden;
+    @media screen and (max-width: 560px) {
+        .home_main_content {
+            gap: 1rem;
+        }
+
+        .home_main_content h1 {
+            font-size: 5rem;
+        }
+
+        .home_main_content h4 {
+            font-size: 95%;
+        }
+
+        .home_main_content p {
+            font-size: 1rem;
+        }
+
+        main {
+            width: min(100% - 9vw);
+            margin-inline: auto;
+        }
     }
 
-    .all {
-        background-color: transparent;
-        z-index: -100px;
-        height: 100vh;
-        width: 100%;
-        z-index: 1;
-        position: absolute;
+    @media screen and (max-width: 480px) {
+        .main_container {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            height: 175vw;
+        }
     }
 
-    .overlay {
-        top: 0;
-        right: 0;
-        overflow: hidden;
-        background-color: hsl(var(--LIGHT-WHITE)/0.4);
-        backdrop-filter: blur(30px);
-        display: flex;
-        position: fixed;
-        height: 100vh;
-        z-index: 100;
-        width: 0;
-        overflow: hidden;
-        transition: all ease-out .3s;
+    @media screen and (max-width: 375px) {
+        .main_container {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            height: 225vw;
+        }
     }
 
-
-
-    .overlay_content ul {
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        top: 6rem;
-        left: 20px;
-        position: relative;
+    @media screen and (max-width: 360px) {
+        .main_container {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            height: 225vw;
+        }
     }
 
-    .overlay_content {
-        position: relative;
+    @media screen and (max-width: 320px) {
+        .main_container {
+            background-image: url(./assets/home/background-home-mobile.jpg);
+            height: 245vw;
+        }
     }
-
-    .overlay_content li {
-        list-style: none;
-        padding-block: 10px;
-        display: block;
-    }
-
-    .overlay_content a {
-        display: block;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: var(--FW-400);
-        font-size: 80%;
-        text-decoration: none;
-        color: var(--LIGHT-WHITE)
-    }
-
-
-    .overlay_content a {
-        display: flex;
-        gap: 5px;
-    }
-
-    .overlay_content ul {
-        display: flex;
-        padding: 40% 0;
-        gap: 1rem;
-    }
-
-    .overlay_content a:hover {
-        color: var(--WHITE);
-    }
-
-    .logo {
-        margin-top: -14px;
-    }
-
-    .open {
-        z-index: 100;
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-
-    /* HOME MAIN STYLING  */
-}
-
-@media screen and (max-width: 480px) {}
-
-@media screen and (max-width: 375px) {}
-
-@media screen and (max-width: 360px) {}
-
-@media screen and (max-width: 320px) {}
