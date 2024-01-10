@@ -17,6 +17,10 @@ body {
     background-color: rgb(9, 9, 32);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* VARIABLE  */
 :root {
     /* CLOUR  */
@@ -191,6 +195,7 @@ main {
     align-items: center;
     text-transform: uppercase;
     padding: 1rem;
+    cursor: pointer;
     width: 200px;
     height: 200px;
     border-radius: 50%;
