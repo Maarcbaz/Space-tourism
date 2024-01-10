@@ -14,11 +14,17 @@ body {
     font-family: var(--ff-sans-normal);
     line-height: 1.5;
     overflow-x: hidden;
-    background-color: rgb(9, 9, 32);
+    background-color: rgb(11, 13, 25);
 }
 
 a {
     text-decoration: none;
+}
+
+.content_date {
+    color: var(--VERY-LIGHT-WHITE);
+    font-weight: var(--FW-700);
+    font-size: 1.5rem;
 }
 
 /* VARIABLE  */
@@ -38,7 +44,6 @@ a {
     --ff-serif: "Bellefair", serif;
     --ff-sans-cond: "Barlow Condensed", sans-serif;
     --ff-sans-normal: "Barlow", sans-serif;
-
 }
 
 /* PAGES DESTINATION, CREW, TECHNOLOGY  */
@@ -317,9 +322,7 @@ main {
             transition: all ease-out .3s;
         }
 
-
-
-        .overlay_content ul {
+        .overlay_content {
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -332,7 +335,7 @@ main {
             position: relative;
         }
 
-        .overlay_content li {
+        .overlay_content {
             list-style: none;
             padding-block: 10px;
             display: block;
@@ -348,24 +351,25 @@ main {
             color: var(--LIGHT-WHITE)
         }
 
-
-        .overlay_content a {
-            display: flex;
-            gap: 5px;
-        }
-
-        .overlay_content ul {
-            display: flex;
-            padding: 40% 0;
+        .overlay_content {
+            line-height: 40px;
+            display: block;
+            margin-top: 4rem;
+            padding-left: 20px;
+            position: absolute;
             gap: 1rem;
         }
-
+        .overlay_content a  {
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+        }
         .overlay_content a:hover {
             color: var(--WHITE);
         }
 
         .logo {
-            margin-top: -14px;
+            margin-top: -5px;
         }
 
         .open {
@@ -373,7 +377,7 @@ main {
             display: block;
             position: absolute;
             right: 20px;
-            top: 20px;
+            top: 27px;
         }
 
         /* HOME MAIN STYLING  */
