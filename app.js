@@ -21,3 +21,26 @@ all_nav.addEventListener('click', () => {
         overlayNav.style.width = '0'
     }
 })
+
+
+
+
+
+
+        // function setActivePage(pageId) {
+        //     // Reset all content elements
+        //     var contentElements = document.getElementsByClassName('content');
+        //     for (var i = 0; i < contentElements.length; i++) {
+        //         contentElements[i].style.display = 'none';
+        //     }
+
+        //     // Reset all navigation items
+        //     var navItems = document.getElementsByClassName('nav-item');
+        //     for (var i = 0; i < navItems.length; i++) {
+        //         navItems[i].classList.remove('active');
+        //     }
+
+        //     // Set the selected page as active
+        //     document.getElementById(pageId).style.display = 'block';
+        //     event.currentTarget.classList.add('active');
+        // }
