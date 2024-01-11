@@ -1,7 +1,7 @@
 let navPath = window.location.pathname;
 let navlinks = document.querySelectorAll('.links_h')
 navlinks.forEach(link => {
-    if(link.href.includes(`${navPath}`)) {
+     if(link.href.includes(`${navPath}`) || link.href === `${navPath}`) {
         link.classList.add('active')
         console.log(navPath);
     }
