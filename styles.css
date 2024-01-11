@@ -34,6 +34,7 @@ a {
     --VERY-LIGHT-WHITE: rgba(210, 216, 249, 0.427);
     --WHITE: rgb(255, 255, 255);
     --BLACK: rgb(84, 84, 84);
+    --B-BLACK: #000;
     /* BOLDNESS  */
     --FW-400: 400;
     --FW-500: 500;
@@ -188,7 +189,7 @@ main {
     color: var(--LIGHT-WHITE);
 }
 
-.home_main_btn button {
+.home_main_btn .button {
     border: none;
     outline: none;
     display: flex;
@@ -202,6 +203,8 @@ main {
     cursor: pointer;
     width: 200px;
     height: 200px;
+    background-color: var(--WHITE);
+    color: var(--B-BLACK);
     border-radius: 50%;
 }
 
