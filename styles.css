@@ -189,12 +189,12 @@ main {
     color: var(--LIGHT-WHITE);
 }
 
-.home_main_btn  {
+.home_main_btn .button  {
     display: flex;
     align-items: center;
-    justify-content: center;
     border: none;
     outline: none;
+    justify-content: center;
     font-weight: var(--FW-400);
     font-size: 1.5rem;
     font-family: var(--ff-serif);
