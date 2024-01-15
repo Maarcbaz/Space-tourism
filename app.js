@@ -21,11 +21,13 @@ contaiener.addEventListener('click', () => {
         overlayNav.style.width = '0'
     }
 })
-
-
-
-
-
+let navpathSm = window.location.href 
+let navlinksSm = document.querySelectorAll('.links_sm')
+navlinksSm.forEach(linkSm => {
+   if (linkSm.href.includes(`${navpathSm}`)) {
+        linkSm.classList.add('activeSm')
+   }
+})
 
         // function setActivePage(pageId) {
         //     // Reset all content elements

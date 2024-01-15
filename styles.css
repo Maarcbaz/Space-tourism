@@ -361,11 +361,6 @@ main {
         gap: 1rem;
     }
 
-
-    .overlay_content a:hover {
-        color: var(--WHITE);
-    }
-
     .logo {
         margin-top: -5px;
     }
@@ -383,7 +378,14 @@ main {
 
     .overlay_content .nav:hover {
         border-right: 3px solid #fff;
+        color: var(--WHITE);
 
+    }
+
+    a.activeSm {
+        border-right: 3px solid #fff;
+        color: var(--WHITE);
+        margin-right: -40px;    
     }
 
     .open {
