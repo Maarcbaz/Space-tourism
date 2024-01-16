@@ -26,6 +26,7 @@ let navlinksSm = document.querySelectorAll('.links_sm')
 navlinksSm.forEach(linkSm => {
    if (linkSm.href.includes(`${navpathSm}`)) {
         linkSm.classList.add('activeSm')
+        console.log(linkSm);
    }
 })
 

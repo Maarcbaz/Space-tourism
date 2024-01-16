@@ -321,71 +321,36 @@ main {
         transition: all ease-out .3s;
     }
 
-    .overlay_content {
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        top: 6rem;
-        left: 20px;
-        position: relative;
-    }
-
-    .overlay_content {
-        position: relative;
-    }
-
-    .overlay_content {
-        list-style: none;
-        padding-block: 10px;
-        display: block;
-    }
-
-    .overlay_content a {
-        display: block;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: var(--FW-400);
-        font-size: 80%;
-        text-decoration: none;
-        color: var(--LIGHT-WHITE)
-    }
-
-
-    .overlay_content {
-        line-height: 40px;
-        display: block;
-        margin-top: 4rem;
-        padding-right: 60px;
-        position: relative;
-        width: 100%;
-        gap: 1rem;
-    }
-
     .logo {
         margin-top: -5px;
     }
 
     .overlay_content {
+        margin-top: 10rem;
+        position: relative;
+        left: 40px;
         display: flex;
-        gap: 40px;
-        justify-content: flex-start;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .overlay_content .nav {
-        margin-right: -40px;
-
-    }
-
-    .overlay_content .nav:hover {
+    .activeSm {
         border-right: 3px solid #fff;
         color: var(--WHITE);
-
     }
 
-    a.activeSm {
-        border-right: 3px solid #fff;
+    .overlay_content a {
+        text-transform: capitalize;
         color: var(--WHITE);
-        margin-right: -40px;    
+        margin-right: -80%;
+    }
+
+    .overlay_content .homeSm {
+        padding-right: -90%;
+    }
+
+    .overlay_content .home {
+        margin-right: -89%;
     }
 
     .open {
@@ -395,8 +360,6 @@ main {
         right: 20px;
         top: 27px;
     }
-
-    /* HOME MAIN STYLING  */
 }
 
 @media screen and (max-width: 560px) {
