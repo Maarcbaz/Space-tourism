@@ -1,7 +1,7 @@
 let navPath = window.location.href;
 let navlinks = document.querySelectorAll('.links_h')
 navlinks.forEach(link => {
-     if(link.href == (`${navPath}`)) {
+     if(link.href.includes(`${navPath}`)) {
         link.classList.add('active')
         console.log(navPath);
     }
@@ -24,7 +24,7 @@ contaiener.addEventListener('click', () => {
 let navpathSm = window.location.href 
 let navlinksSm = document.querySelectorAll('.links_sm')
 navlinksSm.forEach(linkSm => {
-   if (linkSm.href == (`${navpathSm}`)) {
+   if (linkSm.href.includes(`${navpathSm}`)) {
         linkSm.classList.add('activeSm')
         console.log(linkSm);
    }
