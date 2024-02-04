@@ -16,18 +16,23 @@
     --ff-sans-normal: "Barlow", sans-serif;
 }
 
-/* MAIN SECTION  */
-.start_date__content {
-    display: flex;
-    gap: 1rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.content_date_type  {
-    font-family: var(--ff-sans-normal);
-    text-transform: uppercase;
-    letter-spacing: 2.4px;
-    align-items: center;
-    font-weight: var(--FW-400);
-    font-size: 1.5rem;
-    color: var(--WHITE);
+img {
+    max-width: 100%;
+    /* display: block; */
+}
+
+/* MAIN SECTION  */
+.container {
+    width: 100%;
+}
+
+main {
+    margin-top: 5rem;
+    width: 100%;
 }

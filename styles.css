@@ -146,68 +146,6 @@ ul {
 }
 
 /* MAIN HOME SECTION  */
-main {
-    margin-top: 5rem;
-    width: min(100% - 20vw);
-    margin-inline: auto;
-}
-
-.home {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
-}
-
-.home_main_content {
-    width: 370px;
-    display: flex;
-    flex-direction: column;
-}
-
-.home_main_content h4 {
-    font-weight: var(--FW-400);
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-    color: var(--LIGHT-WHITE);
-    font-weight: var(--FW-400);
-    font-family: var(--ff-sans-cond);
-
-}
-
-.home_main_content h1 {
-    font-family: var(--ff-serif);
-    color: var(--WHITE);
-    font-size: 8rem;
-    font-weight: var(--FW-400);
-}
-
-.home_main_content p {
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: var(--FW-500);
-    color: var(--LIGHT-WHITE);
-}
-
-.home_main_btn .button {
-    display: flex;
-    align-items: center;
-    border: none;
-    outline: none;
-    justify-content: center;
-    font-weight: var(--FW-400);
-    font-size: 1.5rem;
-    font-family: var(--ff-serif);
-    text-transform: uppercase;
-    padding: 1rem;
-    cursor: pointer;
-    width: 200px;
-    height: 200px;
-    background-color: var(--WHITE);
-    color: var(--B-BLACK);
-    border-radius: 50%;
-}
-
 @media screen and (max-width: 960px) {
     .main_container {
         background-image: url(./assets/home/background-home-tablet.jpg);
@@ -233,49 +171,6 @@ main {
     .topnav ul {
         background: hsl(var(--LIGHT-WHITE)/.9) !important;
         backdrop-filter: blur(30px);
-    }
-
-    /* MAIN STYLING  */
-    .home_main_content h1 {
-        font-size: 6rem;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    /* HOME MAIN STYLING  */
-    .home_main {
-        flex-direction: column;
-    }
-
-    main {
-        position: relative;
-        margin-top: 1rem;
-
-    }
-
-    .home {
-        margin-top: 4rem;
-        gap: 4rem;
-        flex-direction: column;
-
-    }
-
-    .home_main_content {
-        width: 100%;
-    }
-
-    .home_main_content {
-        text-align: center;
-    }
-
-    .home_main_content h1 {
-        font-size: 5rem;
-    }
-
-    .home_main_content h4 {
-        font-size: 100%;
     }
 }
 
@@ -319,6 +214,10 @@ main {
         z-index: 100;
         width: 0;
         transition: all ease-out .3s;
+    }
+
+    .overlay.activenav {
+        width: 230px;
     }
 
     .logo {
