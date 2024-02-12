@@ -15,7 +15,7 @@ contaiener.addEventListener('click', () => {
     //     overlayNav.style.width = '0'
     //     ToggleNavO.setAttribute('src', './assets/shared/icon-hamburger.svg')
     // }
-    if (overlayNav.className.includes('activenav') || overlayNav.style.width === '230px') {
+    if (overlayNav.className.includes('activenav') || overlayNav.style.width === '220px') {
         ToggleNavO.setAttribute('src', './assets/shared/icon-hamburger.svg')
 
     }
@@ -26,7 +26,7 @@ open.addEventListener('click', () => {
     //     overlayNav.style.width = '0'
     // } else {
     //     overlayNav.style.width = '230px'
-    // }
+    // }z
     overlayNav.classList.toggle('activenav')
     if (overlayNav.className.includes('activenav')) {
         ToggleNavO.setAttribute('src', './assets/shared/icon-close.svg')

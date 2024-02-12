@@ -1,0 +1,155 @@
+section {
+    width: min(100% - 7vw, 1200px);
+    margin-inline: auto;
+    margin-top: 4rem;
+}
+
+.crew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* MOBILE IMAGE  */
+.crewImg_mobile {
+    display: none;
+}
+
+.crew img {
+    width: 85%;
+}
+
+section p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    color: var(--WHITE);
+}
+
+.secction_number>span {
+    color: var(--VERY-LIGHT-WHITE);
+}
+
+.secction_number span:last-child {
+    margin-inline-start: 8px;
+}
+
+.secction_number span {
+    font-size: 1.5rem;
+    font-family: var(--ff-sans-cond);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* MAIN SECTION  */
+/* CREW CONTENTS  */
+
+/* CREW CONTENT  */
+.crew_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.crew_content {
+    width: 45%;
+}
+
+.crew_content h3 {
+    font-size: clamp(1.8rem, 3vw, 2rem);
+    color: var(--VERY-LIGHT-WHITE);
+    font-weight: var(--FW-400);
+}
+
+.crew_content h2,
+h3 {
+    text-transform: uppercase;
+    font-family: var(--ff-serif);
+
+}
+
+.crew_content h2 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    font-weight: var(--FW-500);
+}
+
+/* CREW CONTENT BUTTONS  */
+.crew_toggle__btn button {
+    margin: 6px;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background-color: var(--VERY-LIGHT-WHITE);
+    opacity: .7;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--VERY-LIGHT-WHITE);
+}
+
+.crew_toggle__btn button:hover {
+    background-color: var(--LIGHT-WHITE);
+}
+
+button.ativeBtn {
+    background-color: var(--WHITE);
+}
+
+@media screen and (max-width: 1024px) {
+    .crew_content h2 {
+        font-size: clamp(2rem, 3vw, 2.2rem);
+        font-weight: var(--FW-500);
+    }
+
+    .crew_content h3 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .crew {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .crew img {
+        justify-self: center;
+        /* width: min-content; */
+        align-self: center;
+        width: 70%;
+        margin-inline: 20%;
+        text-align: center;
+    }
+
+    .crew_content {
+        margin-top: 1.5rem;
+        gap: 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* CREW IMAGE DESKTOP / MOBILE  */
+
+}
+
+@media screen and (max-width: 560px) {
+    .crewImg_mobile {
+        display: block;
+    }
+
+    .crewImg_desktop {
+        display: none;
+    }
+}

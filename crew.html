@@ -9,7 +9,10 @@
 			href="./assets/destination/image-moon.webp"
 			type="image/x-icon" />
 		<link rel="stylesheet" href="./styles.css" />
-		<script src="./app.js" defer></script>
+		<link rel="stylesheet" href="./crew.css" />
+		<!-- <script src="./app.js" defer></script> -->
+		<script type="module" src="./app.js"></script>
+		<script src="./crew.js" defer></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&amp;family=Bellefair&amp;family=Barlow:wght@400;700&amp;display=swap"
 			rel="stylesheet" />
@@ -66,12 +69,37 @@
 				</div>
 				<div class="open">
 					<img
+						id="toggleNav"
 						src="./assets/shared/icon-hamburger.svg"
 						alt="icon-hamburger menu image" />
-					<div class="container"></div>
 				</div>
 			</header>
-			<div class="container"></div>
+			<div class="container">
+				<section>
+					<div class="secction_number">
+						<span>02<span>meet your crew</span></span>
+					</div>
+					<div class="crew">
+						<div class="crew_content">
+							<div class="crew_contents">
+								<h3 class="crew_contents_header"></h3>
+								<h2 class="crew_contents_name"></h2>
+								<p class="crew_contents_paragraph"></p>
+							</div>
+							<div class="crew_toggle__btn">
+								<button onclick="crew1Func()"></button>
+								<button onclick="crew2Func()"></button>
+								<button onclick="crew3Func()"></button>
+								<button onclick="crew4Func()"></button>
+							</div>
+						</div>
+						<div>
+							<img src="" class="crewImg_desktop" alt="" />
+							<img src="" class="crewImg_mobile" alt="" />
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 	</body>
 </html>

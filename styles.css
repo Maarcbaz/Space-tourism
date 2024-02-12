@@ -1,11 +1,19 @@
 /* GENERAL RESET  */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* GENERAL STYLING */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -288,6 +296,14 @@ ul {
     .main_container {
         background-image: url(./assets/home/background-home-mobile.jpg);
         height: 175vw;
+    }
+
+    .overlay.activenav {
+        width: 220px;
+    }
+
+    .overlay_content a {
+        margin-right: -70%;
     }
 }
 
