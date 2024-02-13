@@ -36,21 +36,15 @@ const crewAray = [
         "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
     }
 ]
-
 // VARIABLE COONTENT 
-
 const crew_contents_header = document.querySelector(".crew_contents_header")
 const crew_contents_name = document.querySelector(".crew_contents_name")
 const crew_contents_paragraph = document.querySelector(".crew_contents_paragraph")
-
-
 // IMAGE CONTENT
-
 const crewImg_desktop = document.querySelector(".crewImg_desktop")
 const crewImg_mobile = document.querySelector(".crewImg_mobile")
 const button = document.querySelector(".ativeBtn")
 const crew_toggle__btns = document.querySelectorAll(".crew_toggle__btn button")
-
 crew_toggle__btns.forEach(crew_toggle__btn => {
     crew_toggle__btn.currentTarget += ".ativeBtn"
 })
@@ -73,11 +67,11 @@ crew1Func = () => {
     crew_contents_header.innerHTML = crewDefault.role
     crew_contents_name.innerHTML = crewDefault.name
     crew_contents_paragraph.innerHTML = crewDefault.bio
-
     // IMAGES 
     crewImg_desktop.setAttribute("src", crewDefault.images.png)
+    crewImg_desktop.setAttribute("alt", "Douglas Hurley")
     crewImg_mobile.setAttribute("src", crewDefault.images.webp)
-
+    crewImg_mobile.setAttribute("alt", "Douglas Hurley")
 }
 crew1Func()
 // crew2Func()
@@ -92,20 +86,19 @@ crew2Func = () => {
         } else {
             crew_toggle__btns[1].classList.remove("ativeBtn")
         }
-
     }
     crew2Target()
     // crew_toggle__btns[1].classList.add("ativeBtn")
-
     // NAMED VARIABLES 
     crew_contents_header.innerHTML = crewAray2.role
     crew_contents_name.innerHTML = crewAray2.name
     crew_contents_paragraph.innerHTML = crewAray2.bio
     // IMAGES 
     crewImg_desktop.setAttribute('src', crewAray2.images.png)
+    crewImg_desktop.setAttribute("alt", "Mark Shuttleworth")
     crewImg_mobile.setAttribute('src', crewAray2.images.webp)
+    crewImg_mobile.setAttribute("alt", "Mark Shuttleworth")
 }
-
 // CREW3FUNC 
 crew3Func = () => {
     const crewAray3 = crewAray[2]
@@ -124,12 +117,12 @@ crew3Func = () => {
     crew_contents_header.innerHTML = crewAray3.role
     crew_contents_name.innerHTML = crewAray3.name
     crew_contents_paragraph.innerHTML = crewAray3.bio
-
     // IMAGES 
     crewImg_desktop.setAttribute("src", crewAray3.images.png)
+    crewImg_desktop.setAttribute("alt", "Victor Glover")
     crewImg_mobile.setAttribute("src", crewAray3.images.webp)
+    crewImg_mobile.setAttribute("alt", "Victor Glover")
 }
-
 crew4Func = () => {
     const crewAray4 = crewAray[3]
     function crewTarget4() {
@@ -150,5 +143,7 @@ crew4Func = () => {
     crew_contents_paragraph.innerHTML = crewAray4.bio
     // IMAGES
     crewImg_desktop.setAttribute("src", crewAray4.images.png)
+    crewImg_desktop.setAttribute("alt", "Anousheh Ansari")
     crewImg_mobile.setAttribute("src", crewAray4.images.webp)
+    crewImg_mobile.setAttribute("alt", "Anousheh Ansari")
 }

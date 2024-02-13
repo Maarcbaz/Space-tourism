@@ -105,12 +105,20 @@ button.ativeBtn {
 
 @media screen and (max-width: 1024px) {
     .crew_content h2 {
-        font-size: clamp(2rem, 3vw, 2.2rem);
+        font-size: clamp(2rem, 3vw, 2.5rem);
         font-weight: var(--FW-500);
     }
 
+    .container {
+        overflow-x: hidden;
+    }
+
     .crew_content h3 {
-        font-size: clamp(1rem, 3vw, 1.5rem);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .img_crew {
+        margin-right: -6.3rem;
     }
 }
 
@@ -141,15 +149,54 @@ button.ativeBtn {
     }
 
     /* CREW IMAGE DESKTOP / MOBILE  */
+    .img_crew {
+        margin-right: 0rem;
+    }
 
+    .secction_number {
+        text-align: center;
+    }
+
+    .crew_contents {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    section {
+        width: min(100% - 25vw);
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 560px) {
     .crewImg_mobile {
         display: block;
+        width: 70% !important;
+        border-bottom: .1px solid var(--VERY-LIGHT-WHITE);
     }
+
 
     .crewImg_desktop {
         display: none;
+    }
+
+    section {
+        width: min(100% - 7vw);
+    }
+
+    .crew_content h3 {
+        font-size: clamp(1.2rem, 5vw, 1.4rem);
+    }
+
+    .crew_content h2 {
+        font-size: clamp(1.4rem, 5vw, 1.8rem);
+    }
+
+    .crew_contents_paragraph {
+        font-size: 13px;
+    }
+
+    .secction_number {
+        font-size: 12px;
     }
 }
