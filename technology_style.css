@@ -16,23 +16,201 @@
     --ff-sans-normal: "Barlow", sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* GENERAL STYLING  */
+.tech_img_landscape {
+    display: none;
 }
 
 img {
     max-width: 100%;
-    /* display: block; */
+    display: block;
 }
 
 /* MAIN SECTION  */
 .container {
     width: 100%;
+    overflow: hidden;
 }
 
 main {
     margin-top: 5rem;
-    width: 100%;
+    width: min(100% - 9vw, 1208px);
+    margin-inline: auto;
+}
+
+main span {
+    color: var(--WHITE);
+    font-family: var(--ff-sans-cond);
+    font-size: 1.8rem !important;
+}
+
+/* MAIN SECTION TEXT  */
+section {
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech_main_content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tech_main_content p,
+h5 {
+    color: var(--LIGHT-WHITE);
+}
+
+.tech_main_content h5 {
+    font-family: var(--ff-sans-cond);
+}
+
+.tech_name {
+    color: var(--WHITE);
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    text-transform: uppercase;
+    font-weight: var(--FW-400);
+    font-family: var(--ff-serif);
+}
+
+.tech_main_content {
+    width: 50%;
+}
+
+.tech_img {
+    margin-right: -10%;
+}
+
+/* BUTTONS  */
+.tech_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+button {
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--VERY-LIGHT-WHITE);
+    color: var(--WHITE);
+    font-size: 1.5rem;
+}
+
+button:hover {
+    border: 1px solid var(--WHITE);
+    transition: .2s all ease;
+}
+
+button.activeBtn {
+    background-color: var(--WHITE);
+    color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    button {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section {
+        width: min(100% - 4vw, 1000px);
+        /* width: fit-content; */
+    }
+
+    .tech_name {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tech_img_portrait {
+        width: 75% !important;
+    }
+
+    .tech_img {
+        margin-right: -25%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .tech_img_portrait {
+        width: 75% !important;
+    }
+
+    .tech_img {
+        margin-right: -30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .tech_main_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tech_main_content {
+        flex-direction: column-reverse;
+    }
+
+    /* IMAGES  */
+
+    .tech_img_landscape {
+        display: block;
+    }
+
+    .tech_img {
+        margin-inline: -90px -121px;
+        width: fit-content;
+    }
+
+    .tech_img_portrait {
+        display: none;
+    }
+
+    .tech_btn {
+        margin-block: 2rem 1rem;
+        flex-direction: row;
+        gap: 1.3rem;
+    }
+
+    .secction_number {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    main span {
+        font-size: 1.3rem !important;
+    }
+
+    .tech_name {
+        font-size: 1.7rem;
+    }
+
+    .tech_description {
+        font-size: 15px;
+    }
 }
