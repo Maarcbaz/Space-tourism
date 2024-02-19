@@ -3,7 +3,6 @@ let navlinks = document.querySelectorAll('.links_h')
 navlinks.forEach(link => {
     if (link.href == (`${navPath}`)) {
         link.classList.add('active')
-        console.log(navPath);
     }
 })
 let overlayNav = document.querySelector('.overlay')
@@ -30,17 +29,19 @@ open.addEventListener('click', () => {
     overlayNav.classList.toggle('activenav')
     if (overlayNav.className.includes('activenav')) {
         ToggleNavO.setAttribute('src', './assets/shared/icon-close.svg')
+        ToggleNavO.setAttribute('alt', 'icon-close')
     } else {
         ToggleNavO.setAttribute('src', './assets/shared/icon-hamburger.svg')
+        ToggleNavO.setAttribute('alt', 'icon-hambuger')
     }
 })
+ToggleNavO.setAttribute('alt', 'icon-hambuger')
 
 let navpathSm = window.location.href
 let navlinksSm = document.querySelectorAll('.links_sm')
 navlinksSm.forEach(linkSm => {
     if (linkSm.href == (`${navpathSm}`)) {
         linkSm.classList.add('activeSm')
-        console.log(linkSm);
     }
 })
 

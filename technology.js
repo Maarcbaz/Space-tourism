@@ -49,7 +49,9 @@ tech1Func = () => {
     tech_description.innerHTML = techfuncDefault.description
     // IMAGES 
     tech_img_landscape.setAttribute("src", techfuncDefault.images.landscape)
+    tech_img_landscape.setAttribute("alt", "launch vehicle")
     tech_img_portrait.setAttribute("src", techfuncDefault.images.portrait)
+    tech_img_portrait.setAttribute("alt", "lauch vehicle")
 }
 tech1Func()
 tech2Func = () => {
@@ -68,7 +70,9 @@ tech2Func = () => {
     tech_description.innerHTML = techFunc2.description
     // IMAGES
     tech_img_landscape.setAttribute("src", techFunc2.images.landscape)
+    tech_img_landscape.setAttribute("alt", "spaceport")
     tech_img_portrait.setAttribute("src", techFunc2.images.portrait)
+    tech_img_portrait.setAttribute("alt", "spaceport")
 }
 tech3Func = () => {
     const techFunc3 = technologyArray[2]
@@ -86,5 +90,7 @@ tech3Func = () => {
     tech_description.innerHTML = techFunc3.description
     // IMAGES 
     tech_img_landscape.setAttribute("src", techFunc3.images.landscape)
+    tech_img_landscape.setAttribute("alt", "space capsule")
     tech_img_portrait.setAttribute("src", techFunc3.images.portrait)
+    tech_img_portrait.setAttribute("alt", 'space capsule')
 }

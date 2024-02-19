@@ -178,7 +178,6 @@ ul {
 
     .tech_container {
         background-image: url(./assets/technology/background-technology-tablet.jpg);
-        height: 900px;
     }
 
     .crew_container {
@@ -190,7 +189,11 @@ ul {
     }
 
     .topnav {
-        font-size: 70%;
+        font-size: 90%;
+    }
+
+    .topnav ul {
+        padding-inline: 40px;
     }
 
     .topnav ul {
@@ -207,6 +210,7 @@ ul {
 
     .tech_container {
         background-image: url(./assets/technology/background-technology-mobile.jpg);
+        height: 850px;
     }
 
     .crew_container {
@@ -215,6 +219,7 @@ ul {
 
     .dest_container {
         background-image: url(./assets/destination/background-destination-mobile.jpg);
+        height: 970px;
     }
 
     .topnav_links {

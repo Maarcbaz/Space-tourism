@@ -41,10 +41,15 @@ main {
 main span {
     color: var(--WHITE);
     font-family: var(--ff-sans-cond);
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
+    letter-spacing: 1.5;
 }
 
 /* MAIN SECTION TEXT  */
+main {
+    padding-bottom: 2rem;
+}
+
 section {
     margin-top: 3rem;
     align-items: center;
@@ -67,11 +72,13 @@ section {
 }
 
 .tech_main_content p,
-h5 {
+h4 {
     color: var(--LIGHT-WHITE);
 }
 
-.tech_main_content h5 {
+.tech_main_content h4 {
+    font-size: 1.15rem;
+    font-weight: var(--FW-400);
     font-family: var(--ff-sans-cond);
 }
 

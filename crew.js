@@ -48,7 +48,6 @@ const crew_toggle__btns = document.querySelectorAll(".crew_toggle__btn button")
 crew_toggle__btns.forEach(crew_toggle__btn => {
     crew_toggle__btn.currentTarget += ".ativeBtn"
 })
-console.log(crew_toggle__btns[1]);
 // CREW DEFAULT 
 crew1Func = () => {
     const crewDefault = crewAray[0]
