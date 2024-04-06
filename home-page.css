@@ -77,6 +77,24 @@ main {
     background-color: var(--WHITE);
     color: var(--B-BLACK);
     border-radius: 50%;
+    position: relative;
+}
+
+.home_main_btn .button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: var(--VERY-LIGHT-WHITE);
+    transition: opacity 500ms linear, transform 700ms ease-in-out;
+}
+
+.home_main_btn .button:hover:after,
+.home_main_btn .button:focus:after {
+    transform: scale(1.6);
+    opacity: 1;
 }
 
 @media screen and (max-width: 960px) {

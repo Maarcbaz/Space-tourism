@@ -114,8 +114,13 @@ a {
 .topnav ul {
     backdrop-filter: blur(4rem);
     display: flex;
-    padding: 30px 100px;
     gap: 1rem;
+    padding: 30px 100px;
+}
+
+.topnav li a {
+    padding: 30px 10px;
+    height: 40px;
 }
 
 .topnav ul li {
@@ -144,7 +149,7 @@ a {
 
 
 .topnav ul a:hover {
-    padding-bottom: 33px;
+    padding-bottom: 30px;
     border-bottom: 3px solid var(--VERY-LIGHT-WHITE);
 }
 
@@ -199,6 +204,15 @@ ul {
     .topnav ul {
         background: hsl(var(--LIGHT-WHITE)/.9) !important;
         backdrop-filter: blur(30px);
+    }
+
+    .topnav ul {
+        gap: 12px;
+    }
+
+    .topnav li a {
+        padding: 30px 4px;
+        height: 40px;
     }
 }
 

@@ -207,16 +207,16 @@ button.actibeBtn {
         flex-direction: column;
         align-items: center;
     }
+
+    .destination_distances {
+        font-size: 1.25rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 420px) {
     button {
         gap: 12px;
         font-size: 13px !important;
-    }
-
-    .destination_distances {
-        font-size: 1.25rem;
-        text-align: center;
     }
 }
